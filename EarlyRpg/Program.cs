@@ -241,7 +241,7 @@ namespace EarlyRpg
                 }
                 if (Out_Count == 2)// if king has been talked to and accepted 
                 {
-                    goto case "Outskirts";
+                    //go to "Outskirts";
                 }
                 if (Out_Count == 1)// if king denied
                 {
@@ -273,7 +273,7 @@ namespace EarlyRpg
                 Console.ReadLine();
                 Console.Clear();
                 Player_Room = 3;
-                goto case "BlackSmith";
+                // goto case "BlackSmith";
 
             }
             if (Player_Room == 6)
@@ -339,7 +339,6 @@ namespace EarlyRpg
         static void getWeaponsStats()
         {
             PrintL("Player Health: " + Player_Health);//showing players health
-            #region Weapons
             PrintL("\nWeapons/Armor");// if player has weapon show them
             if (Get_Dagger == true)
             {
@@ -634,7 +633,7 @@ namespace EarlyRpg
                         Print("[Press Enter]");
                         Console.ReadLine();
                         Console.Clear();
-                        goto case "kingdom";// go to you kingdom case
+                        //goto case "kingdom";// go to you kingdom case
                     }
                     if (Dragon_FRight == true)// if dragon is injured
                     {
